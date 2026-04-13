@@ -1,4 +1,4 @@
-/* ===== VARIABLES ===== */
+
 :root {
   --dark-teal: #182f2f;
   --cream:#F7F4D5;
@@ -14,7 +14,6 @@
   --error-text: #721c24;
 }
 
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -28,17 +27,17 @@ body {
   min-height: 100vh;
 }
 
-/* ===== PAGE VISIBILITY ===== */
+
 .page { display: none; }
 .page.active { display: flex; }
 
-/* ===== LOGIN PAGE ===== */
+
 #loginPage {
   min-height: 100vh;
   flex-direction: row;
 }
 
-/* Left Panel */
+
 .left-panel {
   width: 45%;
   background: var(--dark-teal);
@@ -74,7 +73,6 @@ body {
   line-height: 1.6;
 }
 
-/* Right Panel */
 .right-panel {
   width: 55%;
   display: flex;
@@ -102,7 +100,6 @@ body {
   margin-bottom: 28px;
 }
 
-/* ===== FORM ELEMENTS ===== */
 label {
   display: block;
   font-size: 13px;
@@ -157,7 +154,6 @@ button:hover {
   margin-top: 16px;
 }
 
-/* ===== MESSAGES ===== */
 .hidden { display: none !important; }
 
 .error-msg {
@@ -180,7 +176,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
-/* ===== NAVBAR ===== */
+
 .navbar {
   background: var(--dark-teal);
   color: var(--cream);
@@ -214,7 +210,7 @@ button:hover {
   border-radius: 4px;
 }
 
-/* ===== DASHBOARD ===== */
+
 #dashboardPage {
   flex-direction: column;
   min-height: 100vh;
@@ -228,7 +224,7 @@ button:hover {
   align-items: flex-start;
 }
 
-/* ===== CARDS ===== */
+
 .card {
   background: var(--white);
   border: 1.5px solid var(--border);
@@ -253,7 +249,7 @@ button:hover {
   flex: 1;
 }
 
-/* ===== EVENT LIST ===== */
+
 .empty-msg {
   color: var(--text-muted);
   font-size: 14px;
@@ -282,7 +278,7 @@ button:hover {
   margin: 2px 0;
 }
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 768px) {
   #loginPage { flex-direction: column; }
   .left-panel, .right-panel { width: 100%; }
