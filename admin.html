@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campus Connect – Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+
+  <div id="loginPage" class="page active">
+    <div class="left-panel">
+      <div class="brand">
+        
+        <h1 class="brand-name">CAMPUS<br>CONNECT</h1>
+        <p class="tagline">Discover, create, and track<br>events all in one place.</p>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="login-card">
+        <h2>Welcome back</h2>
+        <p class="sub">Login to your Admin account</p>
+
+        <div id="loginError" class="error-msg hidden">Invalid Admin ID or Password.</div>
+
+        <label for="adminId">Admin ID</label>
+        <input type="text" id="adminId" placeholder="Enter your admin ID" />
+
+        <label for="adminPass">Password</label>
+        <input type="password" id="adminPass" placeholder="Enter your password" />
+
+        <button id="loginBtn" onclick="handleLogin()">Login</button>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div id="dashboardPage" class="page">
+
+    <nav class="navbar">
+      <span class="nav-brand"> Campus Connect <span class="badge">Admin</span></span>
+      <button class="logout-btn" onclick="handleLogout()">Logout</button>
+    </nav>
+
+    <div class="dashboard">
+
+      <!-- Add Event Form -->
+      <div class="card form-card">
+        <h3> Add New Event</h3>
+        <div id="formSuccess" class="success-msg hidden">Event added successfully!</div>
+
+        <label for="evtName">Event Name</label>
+        <input type="text" id="evtName"  />
+
+        <label for="evtDate">Date</label>
+        <input type="date" id="evtDate" />
+
+        <label for="evtTime">Time</label>
+        <input type="time" id="evtTime" />
+
+        <label for="evtPlace">Place / Venue</label>
+        <input type="text" id="evtPlace" placeholder="e.g. Main Auditorium, Block A" />
+
+        <button onclick="addEvent()">Add Event</button>
+      </div>
+
+      <!-- Event List -->
+      <div class="card list-card">
+        <h3>All Events</h3>
+        <div id="eventList">
+          <p class="empty-msg">No events added yet.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
