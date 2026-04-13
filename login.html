@@ -1,0 +1,84 @@
+<html>
+<head>
+  <title>CAMPUSCONNECT — LogIn</title>
+  <link rel="stylesheet" href="login.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  <script src="head.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+   <div class="page">
+    <div class="left-panel">
+      <div class="left-content">
+        <div class="brand">
+          <span class="brand-name">
+                <div class="carousel-wrap">
+  <div class="outer">
+    
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="c1.png" />
+          
+        </div>
+        <div class="carousel-item">
+          <img src="c2.png"/>
+          
+        </div>
+        <div class="carousel-item">
+          <img src="c3.png" />
+          
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+                </div>
+           CAMPUS CONNECT</span>
+        </div>
+        <p class="tagline-sub">Discover, create, and track events all in one place.</p>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="form-box">
+        <div class="form-header">
+          <h2>Welcome back</h2>
+          <p>Login to your Campus Connect account</p>
+        </div>
+        <div class="error-msg" id="errMsg"></div>
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" autocomplete="username">
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password">
+        </div>
+        <button class="btn-login" id="loginBtn" onclick="handleLogin()">Login </button>
+        <p class="register-link">Don't have an account? <a href="#">Create one</a></p>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
