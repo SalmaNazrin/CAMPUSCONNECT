@@ -34,10 +34,10 @@ function handleLogin() {
   btn.textContent = "Signing in...";
 
   setTimeout(() => {
-    btn.disabled = false;
-    btn.textContent = "Sign in";
-    alert("Signed in as: " + username);
-  }, 1200);
+  btn.disabled = false;
+  btn.textContent = "Sign in";
+  window.location.href = "head.html";
+}, 1200);
 }
 
 function showError(msg) {
@@ -47,7 +47,6 @@ function showError(msg) {
 }
 
 document.getElementById("password").addEventListener("keydown", function(e) {
-  if (e.key === "Enter") handleLogin( window.location.href = "head.html";
-}, 1200););
+  if (e.key === "Enter") handleLogin();
 });
 
