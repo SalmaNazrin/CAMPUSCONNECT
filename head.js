@@ -47,6 +47,7 @@ function showError(msg) {
 }
 
 document.getElementById("password").addEventListener("keydown", function(e) {
-  if (e.key === "Enter") handleLogin();
+  if (e.key === "Enter") handleLogin( window.location.href = "head.html";
+}, 1200););
 });
 
